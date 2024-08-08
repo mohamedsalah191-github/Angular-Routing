@@ -1,0 +1,18 @@
+.navbar {
+background-color:  #2C3E50;
+transition: all 0.6s ease-in-out;
+  padding: 20px 20px !important;
+  height: 80px !important; 
+}
+.navbar.shrink {
+    padding: 10px 20px !important;
+    height: 80px !important; 
+  }
+  
+  .navbar.expand {
+    padding: 20px 20px !important;
+    height: 120px !important; 
+  }
+.active {
+    background-color: #1ABC9C;
+}

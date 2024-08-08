@@ -1,0 +1,29 @@
+<div class="py-5  mt-5 ">
+    <h1 class="text-center mt-5 text-uppercase">portfolio component</h1>
+    <app-star2></app-star2>
+
+    <div class="container">
+        <div class="row">
+            @for (item of imgs; track $index) {
+            <div class="col-md-4">
+                <div class="inner p-4">
+                    <div class="position-relative overflow-hidden rounded-3 " (click)="Changeimg(item)">
+                        <img class="w-100" [src]="item" alt="">
+                        <div
+                            class="layer1 position-absolute d-flex top-0 bottom-0 end-0 start-0 justify-content-center align-items-center">
+                            <i class="fa-6x fa-solid fa-plus text-white plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+    <div class="layer2 position-fixed bg-primary w-100 z-1 d-flex align-items-center justify-content-center top-0 bottom-0 end-0 start-0 d-none bg-opacity-25">
+        <div class="w-40 ">
+            <img [src]="nowImge" width="600px" class=" " alt="">
+          </div>
+        <div class=" position-absolute top-0 bottom-0 start-0 end-0  z-n1" (click)="Hodeimg()">
+        </div>
+    </div>
+</div>

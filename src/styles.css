@@ -1,0 +1,10 @@
+
+.left , .rigth{
+    width: 150px;
+    height: 6px;
+    border-radius: 100vh;
+  }
+
+.mt-up {
+    margin-top: 50rem !important;
+}
